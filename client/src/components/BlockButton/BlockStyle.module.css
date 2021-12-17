@@ -1,0 +1,39 @@
+.block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-left: 50px;
+    margin-top: 2em;
+}
+.block_inner{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+    width: 100px;
+    border-radius: 10px;
+
+}
+.red{
+    animation: colorit_2 5s linear infinite;
+}
+.green{
+    animation: colorit_1 5s linear infinite;
+}
+@keyframes colorit_1 {
+    20% {
+        box-shadow: 0 0 15px 15px white inset;
+        color: black;
+        background: rgba(204, 0, 0, .4)
+    }
+
+}
+@keyframes colorit_2 {
+    20% {
+        box-shadow: 0 0 15px 15px white inset;
+        background: rgba(0, 204, 0, .4)
+    }
+
+}

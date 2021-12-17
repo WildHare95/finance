@@ -1,0 +1,28 @@
+.table{
+    width: 100%;
+}
+
+.th{
+}
+
+.th :hover{
+    background: #696969;
+    cursor: pointer;
+}
+
+.wrapper_data {
+    border: solid black 2px;
+    margin: 3px;
+}
+
+.preloaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.line{
+    background: wheat;
+    cursor: pointer;
+}

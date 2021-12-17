@@ -1,0 +1,28 @@
+.workField
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    width: 100%;
+}
+
+.mainWrapper{
+    display: grid;
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    right: 15%;
+    height: 65px;
+}
+
+.positionChart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.blockContainer{
+    display: grid;
+    height: 50%;
+}

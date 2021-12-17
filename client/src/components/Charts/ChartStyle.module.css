@@ -1,0 +1,65 @@
+.chart_container {
+    margin-top: 35px;
+}
+
+.preloaderContainerForChart {
+    margin-top: 35px;
+}
+
+.voidChart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 1px;
+    width: 500px;
+    height: 200px;
+
+}
+
+.cloud {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    margin-left: -35%;
+    background: #D5DEE9;
+    border-width: 0.25em;
+    border-style: solid;
+    border-color: #6E839E;
+    border-radius: 50% 50% 0 0;
+    z-index: -1;
+    animation: cloud-move 5s linear 1s infinite alternate;
+}
+
+.cloud:before,
+.cloud:after {
+    content: "";
+    position: absolute;
+    bottom: -0.25em;
+    background: inherit;
+    border-width: 0.25em;
+    border-style: solid;
+    border-color: #6E839E;
+}
+
+.cloud:before {
+    left: 80%;
+    width: 60%;
+    height: 60%;
+    border-left: none;
+    border-radius: 50% 50% 50% 0;
+}
+
+.cloud:after {
+    right: 80%;
+    width: 80%;
+    height: 80%;
+    border-right: none;
+    border-radius: 50% 50% 0;
+}
+
+
+@keyframes cloud-move {
+    from { margin-left:-38%; } to { margin-left:40%; }
+
+}
+
